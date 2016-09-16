@@ -10,3 +10,9 @@ bool isPrimeBruteForce(int x) {
 	}
 	return true;
 }
+
+int main(int argc, char* argv[])
+{
+	/* call isPrimeBruteForce with argument given to the program as x */
+	return 0;
+}
