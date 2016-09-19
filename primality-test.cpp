@@ -1,6 +1,10 @@
 #include<cmath>
+#include<iostream>
 
-bool isPrimeBruteForce(int x) {
+using namespace std;
+
+bool isPrimeBruteForce(int x)
+{
 	if (x < 2)
 		return false;
 	float sqroot_x = sqrt(x);
@@ -13,6 +17,15 @@ bool isPrimeBruteForce(int x) {
 
 int main(int argc, char* argv[])
 {
-	/* call isPrimeBruteForce with argument given to the program as x */
+	int number;
+	bool result;
+	cout << "Enter number to test if it's prime: ";
+	cin >> number;
+	result = isPrimeBruteForce(number);
+	if result {
+		cout << number << " is a prime number.";
+	} else {
+		cout << number << " is not a prime number.";
+	}
 	return 0;
 }
