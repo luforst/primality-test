@@ -1,4 +1,8 @@
+#ifndef _CMATH_
+#define _CMATH_
 #include<cmath>
+#endif
+
 
 bool isPrimeBruteForce(int x) {
 	if (x < 2)
@@ -11,8 +15,3 @@ bool isPrimeBruteForce(int x) {
 	return true;
 }
 
-int main(int argc, char* argv[])
-{
-	/* call isPrimeBruteForce with argument given to the program as x */
-	return 0;
-}
