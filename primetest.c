@@ -7,7 +7,7 @@ using namespace std;*/
 int isPrimeBruteForce(int x)
 {
 	if (x < 2)
-		return false;
+		return 0;
 	double sqroot_x;
 	sqroot_x = sqrt (x);
 	for(int i=0; i <= sqroot_x; i++) { /* If there were only factors above the square root of x, they would be bigger than x itself. */
