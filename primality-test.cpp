@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 	cout << "Enter number to test if it's prime: ";
 	cin >> number;
 	result = isPrimeBruteForce(number);
-	if result {
+	if (result) {
 		cout << number << " is a prime number.";
 	} else {
 		cout << number << " is not a prime number.";
