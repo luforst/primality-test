@@ -3,11 +3,11 @@
 
 using namespace std;
 
-bool isPrimeBruteForce(int x)
+bool isPrimeBruteForce(double x)
 {
 	if (x < 2)
 		return false;
-	float sqroot_x = sqrt(x);
+	double sqroot_x = sqrt(x);
 	for(int i=0; i <= sqroot_x; i++) { /* If there were only factors above the square root of x, they would be bigger than x itself. */
 		if (x%i==0)
 			return false;
@@ -17,7 +17,7 @@ bool isPrimeBruteForce(int x)
 
 int main(int argc, char* argv[])
 {
-	int number;
+	double number;
 	bool result;
 	cout << "Enter number to test if it's prime: ";
 	cin >> number;
