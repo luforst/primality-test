@@ -1,15 +1,14 @@
-#include<math.h>
-#include<stdio.h>
-/*#include<iostream>
-
-using namespace std;*/
+#include <iostream>
+#include <cmath>
+//using namespace std;
 
 int isPrimeBruteForce(int x)
 {
 	if (x < 2)
 		return false;
 	double sqroot_x;
-	sqroot_x = sqrt (x);
+	double square = x;
+	sqroot_x = std::sqrt(square);
 	for(int i=0; i <= sqroot_x; i++) { /* If there were only factors above the square root of x, they would be bigger than x itself. */
 		if (x%i==0)
 			return 0;
@@ -20,16 +19,17 @@ int isPrimeBruteForce(int x)
 int main(int argc, char* argv[])
 {
 	int result;
-/*	int number;
-	cout << "Enter number to test if it's prime: ";
-	cin >> number;
+	int number;
+	std::cout << "Enter number to test if it's prime: " << std::endl;
+	std::cin >> number;
 	result = isPrimeBruteForce(number);
-	if (result) {
-		cout << number << " is a prime number.";
+	std::cout << std::endl;
+	if (result == 1) {
+		std::cout << number << " is a prime number." << std::endl;
 	} else {
-		cout << number << " is not a prime number.";
-	}*/
-	result = isPrimeBruteForce(37);
-	printf("Is 37 a prime number? %i", result);
+		std::cout << number << " is not a prime number." << std::endl;
+	}
+/*	result = isPrimeBruteForce(37);
+	printf("Is 37 a prime number? %i", result);*/
 	return 0;
 }
